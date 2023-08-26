@@ -1,0 +1,54 @@
+= Palestra - Domine a complexidade e os desafios da integração NoSQL
+em aplicações
+Java cloud-native
+
+== Link da apresentação:
+
+* https://docs.google.com/presentation/d/1Nk_MacToDpx5jeN_IEdhrH7K8IypWz9WV6lCMY-l4Xo/edit?usp=sharing
+
+== Jakarta NoSQL
+
+image::jakarta-nosql.gif[Jakarta NoSQL]
+
+== Jakarta Data
+
+image::jakarta-data.gif[Data]
+
+== Start the code
+
+* Install docker: https://www.docker.com/
+* https://hub.docker.com/r/couchbase/server/
+* Run three Docker commands
+** `docker run -d --name mongodb-instance -p 27017:27017 mongo`
+** `docker run -e ARANGO_NO_AUTH=1 -d --name arangodb-instance -p 8529:8529 -d arangodb/arangodb`
+** `docker run -d --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 couchbase`
+* You also have the option for running docker-compose:
+** `docker-compose up -d`
+* Execute the test `mvn clean verify`
+
+== Couchbase Configuration
+
+1. Access: http://localhost:8091/ui/index.html
+2. Select the option "Setup New Cluster"
+3. Define "root" as Admin username
+4. Define "123456" as Password
+5. Define "localhost" as Cluster Name
+6. Accept the terms and conditions
+7. Go to "Buckets" session
+8. Create Bucket "pokemons" using the "Add Bucket" Option
+9. Click at "pokemons"
+10. Add "Pokemon" as Collection
+11. Go to Query session and execute: `CREATE PRIMARY INDEX primaryPokemon ON pokemons._default.Pokemon`
+
+
+== UI query
+
+* http://localhost:8529/
+* http://localhost:8091/
+
+== References
+
+* https://jakarta.ee/specifications/nosql/[Jakarta NoSQL]
+* https://jakarta.ee/specifications/data/[Jakarta Data]
+* https://microprofile.io/[Eclipse Microprofile]
+* https://jakarta.ee/[Jakarta EE]
