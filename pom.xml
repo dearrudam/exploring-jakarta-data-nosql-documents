@@ -13,10 +13,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.eclipse.jnosql.demo</groupId>
-    <artifactId>jakarta-data-nosql-documents</artifactId>
+    <artifactId>exploring-jakarta-data-nosql-documents</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>JNoSQL Demo using Java SE Documents</name>
-    <description>A sample of NoSQL databases </description>
+    <description>A sample of NoSQL databases using Document families</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
