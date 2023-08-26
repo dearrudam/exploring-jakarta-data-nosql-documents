@@ -1,18 +1,10 @@
-= Palestra - Domine a complexidade e os desafios da integração NoSQL
+= Talk - [PT-BR] - Domine a complexidade e os desafios da integração NoSQL
 em aplicações
 Java cloud-native
 
-== Link da apresentação:
+== Presentation's link
 
 * https://docs.google.com/presentation/d/1Nk_MacToDpx5jeN_IEdhrH7K8IypWz9WV6lCMY-l4Xo/edit?usp=sharing
-
-== Jakarta NoSQL
-
-image::jakarta-nosql.gif[Jakarta NoSQL]
-
-== Jakarta Data
-
-image::jakarta-data.gif[Data]
 
 == Start the code
 
