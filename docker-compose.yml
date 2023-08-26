@@ -6,14 +6,6 @@ services:
     ports:
       - "27017:27017"
 
-  arangodb-db:
-    image: arangodb/arangodb
-    container_name: arangodb-db
-    environment:
-      - ARANGO_NO_AUTH=1
-    ports:
-      - "8529:8529"
-
   couchbase-db:
     image: couchbase
     container_name: couchbase-db

@@ -1,6 +1,4 @@
-= Talk - [PT-BR] - Domine a complexidade e os desafios da integração NoSQL
-em aplicações
-Java cloud-native
+= Talk - [PT-BR] - Domine a complexidade e os desafios da integração NoSQL em aplicações Java cloud-native
 
 == Presentation's link
 
@@ -12,7 +10,6 @@ Java cloud-native
 * https://hub.docker.com/r/couchbase/server/
 * Run three Docker commands
 ** `docker run -d --name mongodb-instance -p 27017:27017 mongo`
-** `docker run -e ARANGO_NO_AUTH=1 -d --name arangodb-instance -p 8529:8529 -d arangodb/arangodb`
 ** `docker run -d --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 couchbase`
 * You also have the option for running docker-compose:
 ** `docker-compose up -d`
@@ -27,16 +24,10 @@ Java cloud-native
 5. Define "localhost" as Cluster Name
 6. Accept the terms and conditions
 7. Go to "Buckets" session
-8. Create Bucket "pokemons" using the "Add Bucket" Option
-9. Click at "pokemons"
-10. Add "Pokemon" as Collection
-11. Go to Query session and execute: `CREATE PRIMARY INDEX primaryPokemon ON pokemons._default.Pokemon`
-
-
-== UI query
-
-* http://localhost:8529/
-* http://localhost:8091/
+8. Create Bucket "javanoroeste" using the "Add Bucket" Option
+9. Click at "javanoroeste"
+10. Add "Developer" as Collection
+11. Go to Query session and execute: `CREATE PRIMARY INDEX primaryDeveloper ON javanoroeste._default.Developer`
 
 == References
 
