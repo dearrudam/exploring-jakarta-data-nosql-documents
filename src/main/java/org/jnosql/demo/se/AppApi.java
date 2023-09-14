@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import jakarta.enterprise.inject.se.SeContainer;
 import jakarta.enterprise.inject.se.SeContainerInitializer;
 import jakarta.nosql.Template;
+import jakarta.nosql.document.DocumentTemplate;
 import org.eclipse.jnosql.mapping.DatabaseQualifier;
 
 public class AppApi {
@@ -13,7 +14,7 @@ public class AppApi {
         Faker faker=new Faker();
         try(SeContainer container= SeContainerInitializer.newInstance().initialize()){
 
-            Template template=container.select(Template.class, DatabaseQualifier.ofDocument()).get();
+            DocumentTemplate template=container.select(DocumentTemplate.class, DatabaseQualifier.ofDocument()).get();
 
             for(int i=0;i<10;i++){
                 var dev = Developer.build(faker);

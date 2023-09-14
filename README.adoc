@@ -9,7 +9,7 @@
 * Install docker: https://www.docker.com/
 * https://hub.docker.com/r/couchbase/server/
 * Run three Docker commands
-** `docker run -d --name mongodb-instance -p 27017:27017 mongo`
+** `docker run -d --name mongodb-instance -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=example mongo`
 ** `docker run -d --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 couchbase`
 * You also have the option for running docker-compose:
 ** `docker-compose up -d`

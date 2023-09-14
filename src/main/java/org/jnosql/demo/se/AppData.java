@@ -28,7 +28,7 @@ public class AppData {
 
             System.out.println("pessoas de Lake Benny : " + javaDay.findByCity("Lake Benny").toList());
 
-            System.out.println("CadÊ o Yugo : " + javaDay.cadeYugo());
+            System.out.println("CadÊ o Yugo : " + javaDay.cade("Yugo"));
 
         }
 

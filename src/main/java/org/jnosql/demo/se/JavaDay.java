@@ -1,9 +1,6 @@
 package org.jnosql.demo.se;
 
-import jakarta.data.repository.CrudRepository;
-import jakarta.data.repository.PageableRepository;
-import jakarta.data.repository.Query;
-import jakarta.data.repository.Repository;
+import jakarta.data.repository.*;
 import org.eclipse.jnosql.mapping.Database;
 import org.eclipse.jnosql.mapping.DatabaseType;
 
@@ -15,6 +12,6 @@ public interface JavaDay extends PageableRepository<Developer, String> {
 
     Stream<Developer> findByCity(String lakeBenny);
 
-    @Query("select * from Developer where name='Yugo Sakamoto'")
-    Set<Developer> cadeYugo();
+    @Query("select * from Developer where name like @name")
+    Set<Developer> cade(@Param("name") String name);
 }
